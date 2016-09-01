@@ -1,13 +1,16 @@
 const debug = process.env.NODE_ENV !== 'production';
 const webpack = require('webpack');
 const path = require('path');
+const lost = require('lost');
+
+// PostCSS imports
+const cssnext = require('postcss-cssnext');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
   devtool: debug ? 'inline-sourcemap' : null,
   entry: [
     'babel-polyfill',
-
     './js/app.js',
   ],
   module: {
@@ -24,7 +27,14 @@ module.exports = {
             'transform-decorators-legacy'],
         },
       },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!postcss-loader',
+      },
     ],
+  },
+  postcss: () => {
+    return [cssnext, lost];
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],

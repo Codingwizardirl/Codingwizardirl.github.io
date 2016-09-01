@@ -1,0 +1,51 @@
+.container {
+  margin: 0 auto; ;
+  padding: 20px;
+  height:150px;
+  width: 95%;
+  color: black;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: white;
+}
+
+.js {
+  background: yellow;
+  color:yellow;
+}
+.devicon-javascript-plain{
+  height:250px;
+  width:250px;
+  color:yellow;
+}
+
+.react {
+  background: blue;
+}
+
+.redux {
+  background: purple;
+}
+
+.android {
+  background: green;
+}
+
+.java {
+  background: red;
+}
+
+.kotlin {
+  background: pink;
+}
