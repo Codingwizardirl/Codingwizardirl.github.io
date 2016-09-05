@@ -1,86 +1,132 @@
 import React from 'react';
 import Slider from 'react-slick';
-import KeyboardArrowLeft from 'material-ui/svg-icons/hardware/keyboard-arrow-left';
-import KeyboardArrowRight from 'material-ui/svg-icons/hardware/keyboard-arrow-right';
-import IconButton from 'material-ui/IconButton';
+import Star from 'material-ui/svg-icons/toggle/star';
+import StarHalf from 'material-ui/svg-icons/toggle/star-half';
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table';
 
 import {
   CssIcon,
   HtmlIcon,
   JavaIcon,
   JsIcon,
+  KotlinIcon,
+  TypescriptIcon,
 } from '../../Icons';
+import settings from '../settings';
 import styles from '../styles.css';
 
-const PrevButton = ({ onClick }) => ( // eslint-disable-line react/prop-types
-  <IconButton
-    onClick={onClick}
-    tooltip="Previous"
-  >
-    <KeyboardArrowLeft />
-  </IconButton>
-);
-
-const NextButton = ({ onClick }) => ( // eslint-disable-line react/prop-types
-  <IconButton
-    onClick={onClick}
-    tooltip="Next"
-  >
-    <KeyboardArrowRight />
-  </IconButton>
-);
-
-
-const settings = {
-  accessability: true,
-  adaptiveHeight: true,
-  className: 'slides',
-  dots: false,
-  draggable: true,
-  focusOnSelect: true,
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  swipe: true,
-  prevArrow: <PrevButton />,
-  nextArrow: <NextButton />,
-  responsive: [{
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      infinite: true,
-    },
-  },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: false,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    }],
-  variableWidth: true,
-};
-
 const LanguagesGrid = () => (
-  <div className="container">
-    <Slider {...settings}>
-      <div className="box"><JsIcon /></div>
-      <div className="box"><JavaIcon /></div>
-      <div className="box"><HtmlIcon /></div>
-      <div className="box"><CssIcon /></div>
-    </Slider>
+  <div>
+    <div className="center"><h2 className="headline">Languages</h2></div>
+    <div className="container">
+      <Slider {...settings}>
+        <div className="box"><JsIcon /></div>
+        <div className="box"><JavaIcon /></div>
+        <div className="box"><TypescriptIcon /></div>
+        <div className="box"><HtmlIcon /></div>
+        <div className="box"><CssIcon /></div>
+        <div className="box"><KotlinIcon /></div>
+      </Slider>
+    </div>
+    <Table>
+      <TableHeader
+        displaySelectAll={false}
+        adjustForCheckbox={false}
+      >
+        <TableRow>
+          <TableHeaderColumn>Language</TableHeaderColumn>
+          <TableHeaderColumn>Level</TableHeaderColumn>
+        </TableRow>
+      </TableHeader>
+      <TableBody displayRowCheckbox={false}>
+        <TableRow>
+          <TableRowColumn>Javascipt(ES6, ES7)</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+            Working
+              <Star style={{ marginLeft: '1em' }} />
+              <Star />
+              <Star />
+              <Star />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Java</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+            Working
+              <Star style={{ marginLeft: '1em' }} />
+              <Star />
+              <Star />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>HTML5</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+            Working
+              <Star style={{ marginLeft: '1em' }} />
+              <Star />
+              <Star />
+              <StarHalf />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>CSS3</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+            Working
+              <Star style={{ marginLeft: '1em' }} />
+              <Star />
+              <Star />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>HTML5</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+            Working
+              <Star style={{ marginLeft: '1em' }} />
+              <Star />
+              <Star />
+              <StarHalf />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>TypeScript</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+             Basic
+              <Star style={{ marginLeft: '2em' }} />
+              <Star />
+              <StarHalf />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Kotlin</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+             Basic
+              <Star style={{ marginLeft: '2em' }} />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+      </TableBody>
+    </Table>
   </div>
 );
 
-export default LanguagesGrid
-;
+export default LanguagesGrid;
