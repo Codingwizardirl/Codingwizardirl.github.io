@@ -43,7 +43,7 @@
     "slick-carousel": "^1.6.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --content-base src/www --inline --hot",
+    "dev": "webpack-dev-server --content-base src/www --inline --hot --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
