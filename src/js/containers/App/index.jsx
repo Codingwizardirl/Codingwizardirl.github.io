@@ -1,9 +1,11 @@
 import React from 'react';
-
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { amber300, red100, red500, red700} from 'material-ui/styles/colors';
 import Layout from '../../components/Layout';
+import About from '../../components/About';
+import TabSlider from '../../components/TabSlider';
 import styles from './styles.css';
 
 
@@ -18,7 +20,12 @@ const muiTheme = getMuiTheme({
 });
 const App = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
-    <Layout />
+    <Router history={browserHistory}>
+      <Route path="/" component={Layout} >
+        <IndexRoute component={About} />
+        <Route path="/skills" component={TabSlider} />
+      </Route>
+    </Router>
   </MuiThemeProvider>
 );
 
