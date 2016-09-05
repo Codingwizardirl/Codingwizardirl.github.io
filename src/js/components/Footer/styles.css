@@ -1,5 +1,6 @@
 footer{
   margin: 1em;
+  lost-utility: clearfix;
 }
 
 .icons {
@@ -20,5 +21,10 @@ svg:hover #circle {
   display: flex;
   lost-utility: clearfix;
   align-items: center;
+  lost-row: 1/2;
   justify-content: center;
+}
+
+#trademark {
+  lost-row: 1/2;
 }

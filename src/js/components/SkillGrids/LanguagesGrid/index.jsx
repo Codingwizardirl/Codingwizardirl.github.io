@@ -116,18 +116,6 @@ const LanguagesGrid = () => (
           </TableRowColumn>
         </TableRow>
         <TableRow>
-          <TableRowColumn>HTML5</TableRowColumn>
-          <TableRowColumn>
-            <span className="stars">
-            Working
-              <Star style={{ marginLeft: '1em' }} />
-              <Star />
-              <Star />
-              <StarHalf />
-            </span>
-          </TableRowColumn>
-        </TableRow>
-        <TableRow>
           <TableRowColumn>Kotlin</TableRowColumn>
           <TableRowColumn>
             <span className="stars">

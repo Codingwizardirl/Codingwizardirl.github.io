@@ -42,6 +42,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.min.js',
+    publicPath: '/dist',
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
