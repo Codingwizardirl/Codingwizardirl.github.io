@@ -1,0 +1,33 @@
+.grid-container {
+  lost-utility: clearfix;
+}
+
+.avatar{
+  lost-column: 1/3;
+  float: left;
+  margin: 0 0.5em 0.5em 0;
+  box-sizing: border-box
+}
+.text {
+  lost-column: 2/3;
+  float: left;
+  font-size:calc(9px + 0.5vw);
+  margin: 0.5em;
+  padding: 2em;
+  box-sizing: border-box
+}
+
+@media (max-width: 990px) {
+  .avatar {
+    lost-row: 1/3;
+  }
+  .text {
+    lost-row: 2/3;
+  }
+}
+.highlighted {
+  color: #F44336;
+}
+.highlighted:hover{
+  text-decoration: none;
+}

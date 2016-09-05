@@ -2,6 +2,7 @@ export AndroidIcon from './AndroidIcon';
 export AngularIcon from './AngularIcon';
 export AtomIcon from './AtomIcon';
 export CssIcon from './CssIcon';
+export EmailIcon from './EmailIcon';
 export FacebookIcon from './FacebookIcon';
 export GithubCircleIcon from './GithubCircleIcon';
 export GithubIcon from './GithubIcon';

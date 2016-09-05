@@ -1,0 +1,30 @@
+.navbarAvatar {
+  margin: 0.5em;
+  transition: 700ms;
+  transform: rotate(45deg);
+}
+
+.navbarAvatar:hover {
+  transform: rotate(0deg);
+}
+
+.link{
+  text-transform: uppercase;
+  margin: 0 0.7em 0 0;
+  font-size:calc(12px + 0.5vw);
+  color: #212121;
+  font-weight: 400;
+}
+
+.link:hover{
+  color: #F44336;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.activated {
+  & span{
+    color: #F44336;
+    text-decoration: none;
+    }
+}

@@ -14,7 +14,7 @@ const Layout = (props) => (
     <Header title="Pavel Georgiev" subtitle="Aspiring Software Developer" />
     <Navbar />
   </Paper>
-  <Paper zDepth={1}>
+  <Paper zDepth={2}>
     {props.children}
   </Paper>
     <Footer />
