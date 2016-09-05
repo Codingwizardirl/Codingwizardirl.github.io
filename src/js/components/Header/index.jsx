@@ -1,13 +1,12 @@
 import React, { PropTypes } from 'react';
 import styles from './styles.css';
-import Paper from 'material-ui/Paper';
 
-const Header = (props) =>
-  (<Paper className="wrapper" zDepth={3}>
+const Header = (props) => (
+  <div className="wrapper">
     <div className="name"> {props.title} </div>
     <div className="subtitle"> {props.subtitle} </div>
-  </Paper>
-  );
+  </div>
+);
 
 Header.propTypes = {
   title: PropTypes.string,

@@ -1,6 +1,24 @@
 footer{
+  margin: 1em;
+}
+
+.icons {
+  lost-column: 1/3;
+  width: calc(40px + 1vw);
+  height: 5vw;
+  margin-top: 0.5em;
+}
+
+svg:hover #circle {
+  fill: #F44336;
+}
+
+#circle {
+  transition: 700ms;
+}
+.icon-wrapper {
   display: flex;
+  lost-utility: clearfix;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
 }

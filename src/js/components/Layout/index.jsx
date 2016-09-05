@@ -1,17 +1,23 @@
 import React from 'react';
-
-import Footer from '../Footer';
-import Header from '../Header';
-import TabSlider from '../TabSlider';
 import Paper from 'material-ui/Paper';
 
-const Layout = () => (
+import About from '../About';
+import Header from '../Header';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+import TabSlider from '../TabSlider';
+
+
+const Layout = (props) => (
   <div>
-  <Paper zDepth={3}>
-    <Header title="Pavel Georgiev" subtitle="Aspiring Web Developer" />
-    <TabSlider />
-    <Footer />
+  <Paper zDepth={2}>
+    <Header title="Pavel Georgiev" subtitle="Aspiring Software Developer" />
+    <Navbar />
   </Paper>
+  <Paper zDepth={1}>
+    {props.children}
+  </Paper>
+    <Footer />
   </div>
   );
 export default Layout;
