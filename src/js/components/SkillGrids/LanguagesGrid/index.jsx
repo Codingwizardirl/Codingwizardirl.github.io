@@ -17,6 +17,7 @@ import {
   JavaIcon,
   JsIcon,
   KotlinIcon,
+  PythonIcon,
   TypescriptIcon,
 } from '../../Icons';
 import settings from '../settings';
@@ -30,6 +31,7 @@ const LanguagesGrid = () => (
         <div className="box"><JsIcon /></div>
         <div className="box"><JavaIcon /></div>
         <div className="box"><TypescriptIcon /></div>
+        <div className="box"><PythonIcon /></div>
         <div className="box"><HtmlIcon /></div>
         <div className="box"><CssIcon /></div>
         <div className="box"><KotlinIcon /></div>
@@ -70,6 +72,27 @@ const LanguagesGrid = () => (
           </TableRowColumn>
         </TableRow>
         <TableRow>
+          <TableRowColumn>TypeScript</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+             Basic
+              <Star style={{ marginLeft: '2em' }} />
+              <Star />
+              <StarHalf />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Python</TableRowColumn>
+          <TableRowColumn>
+            <span className="stars">
+             Basic
+              <Star style={{ marginLeft: '2em' }} />
+              <StarHalf />
+            </span>
+          </TableRowColumn>
+        </TableRow>
+        <TableRow>
           <TableRowColumn>HTML5</TableRowColumn>
           <TableRowColumn>
             <span className="stars">
@@ -99,17 +122,6 @@ const LanguagesGrid = () => (
             Working
               <Star style={{ marginLeft: '1em' }} />
               <Star />
-              <Star />
-              <StarHalf />
-            </span>
-          </TableRowColumn>
-        </TableRow>
-        <TableRow>
-          <TableRowColumn>TypeScript</TableRowColumn>
-          <TableRowColumn>
-            <span className="stars">
-             Basic
-              <Star style={{ marginLeft: '2em' }} />
               <Star />
               <StarHalf />
             </span>

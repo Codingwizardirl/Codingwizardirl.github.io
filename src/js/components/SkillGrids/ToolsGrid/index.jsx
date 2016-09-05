@@ -11,7 +11,7 @@ import {
   TableRowColumn,
 } from 'material-ui/Table';
 
-import { AtomIcon, GithubIcon, LinuxIcon, MongodbIcon, PostgresqlIcon } from '../../Icons';
+import { AtomIcon, GithubIcon, GitIcon, LinuxIcon, MongodbIcon, PostgresqlIcon } from '../../Icons';
 import settings from '../settings';
 import styles from '../styles.css';
 
@@ -22,8 +22,9 @@ const ToolsGrid = () => (
     <div className="container">
       <Slider {...settings}>
         <div className="box"><GithubIcon /></div>
-        <div className="box"><AtomIcon /></div>
+        <div className="box"><GitIcon /></div>
         <div className="box"><MongodbIcon /></div>
+        <div className="box"><AtomIcon /></div>
         <div className="box"><PostgresqlIcon /></div>
         <div className="box"><LinuxIcon /></div>
       </Slider>
