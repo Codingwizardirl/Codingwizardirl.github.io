@@ -1,7 +1,6 @@
 const debug = process.env.NODE_ENV !== 'production';
 const webpack = require('webpack');
 const path = require('path');
-const lost = require('lost');
 
 // PostCSS imports
 const cssnext = require('postcss-cssnext');
@@ -34,7 +33,7 @@ module.exports = {
     ],
   },
   postcss: () => {
-    return [cssnext, lost];
+    return [cssnext];
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],

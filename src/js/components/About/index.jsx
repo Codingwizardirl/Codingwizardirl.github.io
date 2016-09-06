@@ -12,7 +12,6 @@ const About = () => (
         src="http://imgur.com/7YqXKGt.jpg"
         size={250}
         className="avatar"
-        style={{ marginLeft:"0.6em" }}
       />
       <div className="text">
       Hello, my name is Pavel Georgiev. I am a student, problem solver and software content creator.
