@@ -10,7 +10,7 @@ const Footer = () => (
       <a href="mailto:hello@pavelgeorgiev.me" className="icons"><EmailIcon /></a>
       <a href="https://twitter.com/prgeorgiev" className="icons"><TwitterIcon /></a>
     </div>
-    <div id="trademark" className="center">© Pavel G. All rights reserved.</div>
+    <div id="trademark">© Pavel G. All rights reserved.</div>
   </footer>
 );
 

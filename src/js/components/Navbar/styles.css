@@ -28,3 +28,7 @@
     text-decoration: none;
     }
 }
+
+#no-router:visited{
+   color: #212121;
+}
