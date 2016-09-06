@@ -1,2 +1,1 @@
-Remake of personal website with React
-pavelgeorgiev.me
+Remake of my personal website with React
