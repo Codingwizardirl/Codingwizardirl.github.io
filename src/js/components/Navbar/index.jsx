@@ -41,7 +41,6 @@ const Navbar = () => (
       href="https://pavelgeorgiev.me/blog/"
       target="_blank"
       className="link"
-      id="no-router"
       rel="noreferrer noopener"
     >
     Blog
