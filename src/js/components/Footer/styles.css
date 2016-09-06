@@ -13,6 +13,7 @@ footer{
 
 svg:hover #circle {
   fill: #F44336;
+  cursor: pointer;
 }
 
 #circle {
