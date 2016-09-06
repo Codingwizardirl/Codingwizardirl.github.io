@@ -9,7 +9,7 @@ const About = () => (
     <h2 className="headline center">Who am I?</h2>
     <div className="grid-container">
       <Avatar
-        src="http://imgur.com/7YqXKGt.jpg"
+        src="https://i.imgur.com/7YqXKGt.jpg"
         size={250}
         className="avatar"
       />
