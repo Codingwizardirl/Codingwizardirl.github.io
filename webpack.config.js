@@ -8,7 +8,7 @@ const cssnext = require('postcss-cssnext');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
-  devtool: debug ? 'inline-sourcemap' : null,
+  devtool: 'cheap-module-source-map',
   entry: [
     'babel-polyfill',
     './js/app.js',
@@ -44,9 +44,18 @@ module.exports = {
     filename: 'app.min.js',
     publicPath: '/dist',
   },
-  plugins: debug ? [] : [
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      },
+    }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+    }),
   ],
 };
