@@ -53,5 +53,19 @@
     </script>
     <div id="app"></div>
     <script src="./dist/app.min.js"></script>
+    <!-- Google Analytics tracking -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-76477401-1', 'auto');
+
+        // Analytics.js plugins for SPA
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'urlChangeTracker');
+        ga('require', 'cleanUrlTracker');
+
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
   </body>
 </html>

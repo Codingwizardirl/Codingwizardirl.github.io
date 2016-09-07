@@ -2,10 +2,11 @@ import React from 'react';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { amber300, red100, red500, red700} from 'material-ui/styles/colors';
+import { amber300, red100, red500, red700 } from 'material-ui/styles/colors';
 import Layout from '../../components/Layout';
 import About from '../../components/About';
 import TabSlider from '../../components/TabSlider';
+import autotrack from 'autotrack';
 import styles from './styles.css';
 
 
