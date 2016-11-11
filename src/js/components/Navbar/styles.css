@@ -7,7 +7,9 @@
 .navbarAvatar:hover {
   transform: rotate(0deg);
 }
-
+.navbarAvatar.a {
+  color: #F44336;
+}
 .link{
   text-transform: uppercase;
   margin: 0 0.7em 0 0;
