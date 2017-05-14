@@ -6,6 +6,7 @@ red500,
 grey50,
 } from 'material-ui/styles/colors';
 
+import config from '../../config';
 import styles from './styles.css';
 
 const Navbar = () => (
@@ -30,7 +31,7 @@ const Navbar = () => (
       <span className="link">Skills</span>
     </Link>
     <a
-      href="https://drive.google.com/file/d/0BziL3OnDZhW_enozZUZzRnBWdzQ/view?usp=sharing"
+      href={config.RESUME_LINK}
       target="_blank"
       className="link"
       rel="noreferrer noopener"
