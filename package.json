@@ -1,6 +1,6 @@
 {
   "name": "pavel-georgiev-me",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
