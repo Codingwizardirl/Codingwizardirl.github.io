@@ -1,0 +1,36 @@
+.container {
+  margin: 0 auto; ;
+  padding: 1em;
+  height:150px;
+  width: 60%;
+  color: black;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: white;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  padding-top: 1em;
+  margin:1.5em 1em 1em 1em;
+  font-weight: 400;
+}
+
+.stars {
+  display: flex;
+  opacity: 0.6;
+  align-items: center;
+}

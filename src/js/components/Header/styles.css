@@ -1,0 +1,21 @@
+.name {
+  font-size: calc(16px + 3vw); /*sets lower limit on font */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.wrapper {
+  padding: 10px;
+  margin:10px;
+  height: 34vh;
+}
+.subtitle {
+  font-size:calc(9px + 1vw); /*sets lower limit on font */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
