@@ -23,6 +23,7 @@
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",
+    "react-rotating-text": "^1.2.0",
     "react-router": "^2.7.0",
     "react-slick": "^0.13.3",
     "react-tap-event-plugin": "^2.0.1",

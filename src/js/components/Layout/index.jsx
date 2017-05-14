@@ -12,7 +12,7 @@ import TabSlider from '../TabSlider';
 const Layout = (props) => (
   <div>
     <Paper zDepth={2}>
-      <Header title="Pavel Georgiev" subtitle="Aspiring Software Developer" />
+      <Header title="Pavel Georgiev"/>
       <Navbar />
     </Paper>
     <Paper zDepth={2}>
