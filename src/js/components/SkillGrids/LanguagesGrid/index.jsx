@@ -30,11 +30,9 @@ const LanguagesGrid = () => (
       <Slider {...settings}>
         <div className="box"><JsIcon /></div>
         <div className="box"><JavaIcon /></div>
-        <div className="box"><TypescriptIcon /></div>
         <div className="box"><PythonIcon /></div>
         <div className="box"><HtmlIcon /></div>
         <div className="box"><CssIcon /></div>
-        <div className="box"><KotlinIcon /></div>
       </Slider>
     </div>
     <Table>
@@ -72,22 +70,12 @@ const LanguagesGrid = () => (
           </TableRowColumn>
         </TableRow>
         <TableRow>
-          <TableRowColumn>TypeScript</TableRowColumn>
-          <TableRowColumn>
-            <span className="stars">
-             Basic
-              <Star style={{ marginLeft: '2em' }} />
-              <Star />
-              <StarHalf />
-            </span>
-          </TableRowColumn>
-        </TableRow>
-        <TableRow>
           <TableRowColumn>Python</TableRowColumn>
           <TableRowColumn>
             <span className="stars">
              Basic
               <Star style={{ marginLeft: '2em' }} />
+              <Star />
               <StarHalf />
             </span>
           </TableRowColumn>
@@ -112,15 +100,6 @@ const LanguagesGrid = () => (
               <Star style={{ marginLeft: '1em' }} />
               <Star />
               <Star />
-            </span>
-          </TableRowColumn>
-        </TableRow>
-        <TableRow>
-          <TableRowColumn>Kotlin</TableRowColumn>
-          <TableRowColumn>
-            <span className="stars">
-             Basic
-              <Star style={{ marginLeft: '2em' }} />
             </span>
           </TableRowColumn>
         </TableRow>

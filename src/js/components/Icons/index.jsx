@@ -20,3 +20,4 @@ export ReactIcon from './ReactIcon';
 export ReduxIcon from './ReduxIcon';
 export TwitterIcon from './TwitterIcon';
 export TypescriptIcon from './TypescriptIcon';
+export SassIcon from './SassIcon'

@@ -29,7 +29,6 @@ const FrameworksGrid = () => (
       <div className="box"><ReactIcon /></div>
       <div className="box"><ReduxIcon /></div>
       <div className="box"><AndroidIcon /></div>
-      <div className="box"><AngularIcon /></div>
     </Slider>
   </div>
   <Table>
@@ -74,26 +73,6 @@ const FrameworksGrid = () => (
           Basic
             <Star style={{ marginLeft: '2em' }} />
             <Star />
-          </span>
-        </TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>Angular</TableRowColumn>
-        <TableRowColumn>
-          <span className="stars">
-          Basic
-            <Star style={{ marginLeft: '2em' }} />
-          </span>
-        </TableRowColumn>
-      </TableRow>
-      <TableRow>
-        <TableRowColumn>Other Flux Application Architecture frameworks</TableRowColumn>
-        <TableRowColumn>
-          <span className="stars">
-          Working
-            <Star style={{ marginLeft: '1em' }} />
-            <Star />
-            <StarHalf />
           </span>
         </TableRowColumn>
       </TableRow>
